@@ -16,7 +16,7 @@ public final class Utils {
     @SneakyThrows
     public static List<String> readLines(String file) {
         return Files.readAllLines(Path.of("src/main/resources/" + file));
-        }
+    }
 
     public static <T> List<T> parseLines(String file, Function<String, ? extends T> mapper) {
         return readLines(file)
